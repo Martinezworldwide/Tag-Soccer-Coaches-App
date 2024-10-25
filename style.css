@@ -19,33 +19,26 @@ body {
     max-width: 500px;
 }
 
-.coach-block {
-    margin: 10px 0;
-}
-
 textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 10px 0;
     resize: none;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 button {
-    padding: 8px 16px;
-    margin: 5px 0;
+    padding: 10px 20px;
+    margin-top: 10px;
     cursor: pointer;
     border: none;
     background-color: #007bff;
     color: white;
     border-radius: 4px;
+    font-size: 16px;
 }
-
-button:hover {
-    background-color: #0056b3;
-}
-
 
 button:hover {
     background-color: #0056b3;
