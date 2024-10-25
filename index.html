@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Username Copier</title>
+    <title>Enhanced Instagram Username Copier</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Copy Instagram Usernames</h1>
+        <input type="text" id="searchBar" placeholder="Search usernames..." onkeyup="filterUsernames()">
         <textarea id="usernames" rows="14" readonly>
 @michel8sanchez
 @rubenbaraja
@@ -25,8 +26,21 @@
 @_luis_garcia_10
 @alonsodt
         </textarea>
-        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <div class="character-counter">
+            Character count: <span id="charCount">0</span> (Max: 2,200 for Instagram)
+        </div>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        <button id="selectAllButton" onclick="selectAllText()">Select All</button>
+        <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+        <button id="resetButton" onclick="resetApp()">Reset</button>
+        <div id="copyMessage" class="copy-message"></div>
+        <button id="toggleTheme" onclick="toggleTheme()">Switch to Dark Mode</button>
+        <button id="saveButton" onclick="saveToFile()">Save to File</button>
+        <input type="file" id="fileInput" onchange="loadFromFile()">
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
