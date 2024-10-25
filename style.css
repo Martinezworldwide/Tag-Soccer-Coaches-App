@@ -15,26 +15,37 @@ body {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+.coach-block {
+    margin: 10px 0;
 }
 
 textarea {
-    width: 80%;
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     resize: none;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 8px 16px;
+    margin: 5px 0;
     cursor: pointer;
     border: none;
     background-color: #007bff;
     color: white;
     border-radius: 4px;
 }
+
+button:hover {
+    background-color: #0056b3;
+}
+
 
 button:hover {
     background-color: #0056b3;
