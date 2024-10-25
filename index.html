@@ -3,42 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Instagram Username Manager</title>
+    <title>Instagram Username Copier</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>AI Instagram Username Manager</h1>
-        <div class="auth-container">
-            <button onclick="login()">Login</button>
-            <button onclick="register()">Register</button>
-        </div>
-        <input type="text" id="searchBar" placeholder="Search usernames..." onkeyup="filterUsernames()">
-        <div class="actions">
-            <button onclick="addUsername()">Add Username</button>
-            <button onclick="suggestUsernames()">AI Suggest Usernames</button>
-            <button onclick="importFromClipboard()">Import from Clipboard</button>
-            <button onclick="exportToCSV()">Export to CSV</button>
-        </div>
-        <div id="usernameTable"></div>
-        <div class="character-counter">
-            Total Usernames: <span id="usernameCount">0</span> | Character Count: <span id="charCount">0</span>
-        </div>
-        <button id="batchActionButton" onclick="openBatchActions()">Batch Actions</button>
-        <div id="batchActionContainer" style="display:none;">
-            <input type="text" id="batchPrefix" placeholder="Prefix">
-            <input type="text" id="batchSuffix" placeholder="Suffix">
-            <button onclick="applyBatchActions()">Apply</button>
-        </div>
-        <button id="copyButton" onclick="copyToClipboard()">Copy All to Clipboard</button>
-        <button id="resetButton" onclick="resetApp()">Reset</button>
+        <h1>Copy Instagram Usernames</h1>
+        <textarea id="usernames" rows="14" readonly>
+@michel8sanchez
+@rubenbaraja
+@pezzolanodt
+@rafabenitezrb
+@jose.bordalas
+@garciapimienta7
+@xavi
+@marcelinogarciatoral
+@luisgarciaplaza
+@simeone
+@pepe__mel
+@mrancelotti
+@_luis_garcia_10
+@alonsodt
+        </textarea>
+        <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
         <div id="copyMessage" class="copy-message"></div>
-        <div class="theme-scheduler">
-            <label>Light/Dark Mode Scheduler:</label>
-            <input type="time" id="startDarkMode" onchange="scheduleTheme()">
-            <input type="time" id="endDarkMode" onchange="scheduleTheme()">
-        </div>
-        <button id="toggleTheme" onclick="toggleTheme()">Switch to Dark Mode</button>
     </div>
     <script src="script.js"></script>
 </body>
