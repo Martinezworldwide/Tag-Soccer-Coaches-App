@@ -8,6 +8,5 @@ function copyToClipboard() {
 }
 
 function openInstagram() {
-    window.open('https://www.instagram.com/', '_blank');
+    window.location.href = 'https://www.instagram.com/';
 }
-
