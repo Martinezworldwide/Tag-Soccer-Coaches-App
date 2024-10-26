@@ -32,6 +32,7 @@ textarea {
 button {
     padding: 10px 20px;
     margin-top: 10px;
+    margin-right: 5px;
     cursor: pointer;
     border: none;
     background-color: #007bff;
