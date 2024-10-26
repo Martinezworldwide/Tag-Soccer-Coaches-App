@@ -6,3 +6,8 @@ function copyToClipboard() {
     copyMessage.textContent = 'Usernames copied to clipboard!';
     setTimeout(() => copyMessage.textContent = '', 2000);
 }
+
+function openInstagram() {
+    window.open('https://www.instagram.com/', '_blank');
+}
+
